@@ -13,4 +13,15 @@
     height: 500px;
     background-image: url('http://goo.gl/04j7Nn')
 }
-    
+
+.jumbotron h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+	font-family: 'Shift', sans-serif;
+}
+
+.jumbotron p{
+    color: #fff;
+    font-size: 20px;
+}
