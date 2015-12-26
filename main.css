@@ -1,50 +1,41 @@
-.nav a{
-    color: #5a5a5a;
-    font-size: 11px;
-    font-weight: bold;
-    padding-top: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 14px;
-    text-transform: uppercase;
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  background-color: #eee;
 }
 
-.nav li{
-	display: inline;
+.container {
+  width: 520px;
+  margin-top: 20px;
 }
 
-.jumbotron {
-    height: 500px;
-    background-image: url('http://goo.gl/04j7Nn')
+.button-group {
+  margin-bottom: 20px;
 }
 
-.jumbotron h1{
-    color: #fff;
-    font-size: 48px;
-    font-weight: bold;
-	font-family: 'Shift', 'sans-serif';
+.counter {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
 }
 
-.jumbotron p{
-    color: #fff;
-    font-size: 20px;
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
 }
 
-.jumbotron .container{
-    position: relative;
-    top: 100px;
-}
-
-.learn-more {
-    background-color: #f7f7f7;
-}
-
-.learn-more h3{
-    font-family: 'Shift', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.learn-more a{
-    color: #00b0ff;
+.posts li {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
 }

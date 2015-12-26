@@ -1,47 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-	<link href="main.css" rel="stylesheet">
-</head>
+	<head>
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="app.js"></script>
+		<link href="main.css" rel="stylesheet">
+	</head>
+	
 	<body>
-		<div class="nav">
-			<div class="container">
-				<ul>
-				  <li>Steve</li>
-				  <li>Is</li>
-				</ul>
-				<ul>
-					<li>Cooler</li>
-					<li>Than</li>
-					<li>Kevin</li>
-				</ul>
-			</div>
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<textarea class="form-control status-box" rows="2" placeholder="What's on your mind?"></textarea>
+				</div>
+			</form>
+		<div class="button-group pull-right">
+			<p class="counter">140</p>
+			<a href="#" class="btn btn-primary">Post</a>
 		</div>
-		<div class="jumbotron">
-            <div class="container">
-                <h1>Kevin</h1>
-                    <p>Hello Kevin</p>
-            </div>
-        </div>
-		<div class="learn-more">
-			<div class="container">
-				<div>
-					<h3>Kehbin</h3>
-						<p>Mah name is Kehbin</p>
-						<p><a href="https://www.youtube.com/watch?v=an0jSLgQ9vQ">Kehhhhhhhhbin</a></p>
-				</div>
-				<div>
-					<h3>Some Gooooood Shit</h3>
-						<p>Now thats some goooooood sheeeeeet</p>
-						<p><a href="https://www.youtube.com/watch?v=an0jSLgQ9vQ">Learn how to break your CPU by Kehbin</a></p>
-				</div>
-				<div>
-					<h3>I'm so bored help.</h3>
-						<p>Shet man help me. I'm so bored.</p>
-						<p><a href="https://www.youtube.com/watch?v=an0jSLgQ9vQ">Test link 3</a></p>
-				</div>
-			</div>
-		</div>
-    </body>
+		<ul class="posts">
+		</ul>
+    </div>    
+  </body>
 </html>
