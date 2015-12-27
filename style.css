@@ -5,6 +5,7 @@
 	height: 287px;
 	position: fixed;
 	width: 155px;
+	top: 50px;
 }
 
 .menu ul {
@@ -40,6 +41,13 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-right: 10px;
+	float: left;
+	display: inline;
+}
+
+.menuIconClose {
+	padding-left: 12px;
 }
 
 .menuIconOpen .pending {
@@ -66,5 +74,5 @@
 
 /* Background Styling (Jumbotron) */
 .jumbotron {
-	display: none;
+	background-color: #ffffff;
 }
