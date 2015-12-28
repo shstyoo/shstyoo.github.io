@@ -1,20 +1,13 @@
-.bigContainer {
-	background: #eee;
-	position: relative;
-}
-
-.vert {
-	display: bigContainer;
-	vertical-align: middle;
-}
+/* Non-Responsive editing
+   Keep in mind that editing "width: 800px;" to default
+   will cause non-responsive wrapping to cease
+   */
 
 .container {
-	position: aboslute;
 	background: #FFFFFF;
 	min-height: 500px;
 	margin-left: 75px;
 	width: 800px;
-	border: 2px solid red;
 }
 
 
