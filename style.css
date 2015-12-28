@@ -1,11 +1,34 @@
+.bigContainer {
+	background: #eee;
+	position: relative;
+}
+
+.vert {
+	display: bigContainer;
+	vertical-align: middle;
+}
+
+.container {
+	position: aboslute;
+	background: #FFFFFF;
+	min-height: 500px;
+	margin-left: 75px;
+	width: 800px;
+	border: 2px solid red;
+}
+
+
+
 /* Menu Styling */
+
 .menu {
 	background: #191919 no-repeat;
-	left: -155px;
-	height: 287px;
+	left: -870px;
+	height: 50px;
 	position: fixed;
-	width: 155px;
-	top: 50px;
+	width: 870px;
+	top: 0px;
+	z-index: 10
 }
 
 .menu ul {
@@ -18,22 +41,25 @@
 	font-family: 'Droid Sans', sans-serif;
 	color: #FFFFFF;
 	font-size: large;
-	border-bottom: 1px solid #7F7F7F;
-	line-height: 65px;
+	border-right: 1px solid #7F7F7F;
+	line-height: 44px;
 	padding-bottom: 3px;
-	padding-left: 20px;
 	padding-top: 3px;
+	float: left;
 }
 
 .menu li a {
+	text-align: center;
+	display: block;
 	font-family: 'Droid Sans', sans-serif;
 	color: #FFFFFF;
 	font-size: large;
 	text-decoration: none;
+	width: 215px;
 }
 
 .menu li:last-child{
-	border-bottom: none;
+	border-right: none;
 }
 
 .menuIconOpen, .menuIconClose {
@@ -42,8 +68,10 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 10px;
+	top: 0px;
+	left: 0px;
 	float: left;
-	display: inline;
+	position: absolute;
 }
 
 .menuIconClose {
@@ -55,6 +83,7 @@
 }
 
 .menuIconOpen i {
+	position: fixed;
 	color: #191919;
 	font-size: 30px;
 	text-decoration: none;
@@ -62,6 +91,7 @@
 }
 
 .menuIconClose {
+	position: fixed;
 	display: none;
 }
 
@@ -73,6 +103,64 @@
 }
 
 /* Background Styling (Jumbotron) */
-.jumbotron {
-	background-color: #ffffff;
+
+.header-Main {
+	font-family: 'Ubuntu', sans-serif;
 }
+
+.slider {
+	font-family: 'Droid Sans', sans-serif;
+	min-height: 500px;
+	margin-left: 75px;
+}
+
+/* Header Styling */
+
+.header-Main h1 {
+	margin-top: 75px;
+	font-size: 50px;
+	text-align: center;
+}
+
+.header-Main h2 {
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+/* Project Slider Styling */
+
+.slider h2 {
+	margin-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+}
+
+.slider h3 {
+	font-size: 25px;
+	/*margin-left: -150px;*/
+}
+
+.slider p {
+	font-size: 18px;
+	/*margin-left: -150px;*/
+}
+
+/* If Project name is longer add (...) to signify name is too long */
+#noWrapProjInfo {
+	width: 300px;
+}
+
+#noWrapProjImg {
+	width: 415px;
+}
+.col-xs-8 noWrapProjImg {
+	width: 415px;
+}
+
+.slider img{
+	margin-left: -15px;
+	margin-top: 15px;
+}
+

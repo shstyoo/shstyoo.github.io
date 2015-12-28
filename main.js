@@ -4,7 +4,7 @@ var main = function() {
 	$(".menuIconOpen").click(function(){
 		if( !$(".menuIconOpen").hasClass("pending") ) {
 			$(".menuIconOpen").addClass("pending");
-			$(".menu").animate({ left: "0px" }, 200);
+			$(".menu").animate({ left: "45px" }, 200);
 			setTimeout(removeOpenClass, 400);
 			//$(".menuIconOpen").fadeOut(200);
 			$(".menuIconOpen").hide();
@@ -16,7 +16,7 @@ var main = function() {
 	$(".menuIconClose").click(function() {
 		if( !$(".menuIconClose").hasClass("pending") ){
 			$(".menuIconClose").addClass("pending");
-			$(".menu").animate({ left: "-155px" }, 200);
+			$(".menu").animate({ left: "-870px" }, 200);
 			setTimeout(removeCloseClass, 400);
 			//$(".menuIconClose").fadeOut(200);
 			$(".menuIconClose").hide();
