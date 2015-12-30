@@ -51,13 +51,13 @@ var main = function() {
 
 	// Function to populate repo descriptions
 	// Same skeleton as populateName
-	function populateDesc(url2) {
+	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			$('<li>').text(xhr.responseTest).appendTo($('.project-slides'));
 			$('<li>').text("Hello").appendTo($('.project-slides'));
 		};
-		xhr.open('GET' ,url2, true);
+		xhr.open('GET' ,url, true);
 		xhr.send();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
