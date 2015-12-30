@@ -32,12 +32,19 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 
+	$('<li>').text("fuck").prependTo($('.project-slides'));
+
 	function populatePre(url) {
 		var xhr = new XMLHttpRequest();
-		xhr.onload = function () {
-			document.getElementById('contents').textContent = this.reponseText;
+		xhr.onreadystatechange = function() {
+
+			document.getElementById("contents").innerHTML = JSON.stringify(xhr.responseText);
+
 		};
-		xhr.open('GET', url);
+		xhr.open('GET', url, true);
+
+		$('<li>').text("fuck #2").prependTo($('.project-slides'));
+
 		xhr.send();
 	}
 
