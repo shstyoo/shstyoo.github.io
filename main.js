@@ -34,23 +34,23 @@ var main = function() {
 
 	// AJAX TESTING
 
-	$('<li>').text("fuck").prependTo($('.project-slides'));
+	$('<li>').text("test").prependTo($('.project-slides'));
 
 	function populatePre(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 
-			document.getElementById("contents").innerHTML = JSON.stringify(xhr.responseText);
+			document.getElementById("contents").innerHTML = xhr.responseText;
 
 		};
 		xhr.open('GET', url, true);
 
-		$('<li>').text("fuck #2").prependTo($('.project-slides'));
+		$('<li>').text("test #2").prependTo($('.project-slides'));
 
 		xhr.send();
 	}
 
-	populatePre('outputh3.txt');
+	populatePre('test.txt');
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
