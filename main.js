@@ -54,7 +54,7 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			$('<li>').text(xhr.responseTest).appendTo($('.project-slides'));
+			$('<li>').text(xhr.responseTest).text($('.project-slides'));
 			$('<li>').text("Hello").appendTo($('.project-slides'));
 		};
 		xhr.open('GET' ,url, true);
