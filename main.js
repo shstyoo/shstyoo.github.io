@@ -56,7 +56,6 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			$('li').text(xhr.responseTest).text($('.project-slides'));
-			$('li').text("Hello").appendTo($('.project-slides'));
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
