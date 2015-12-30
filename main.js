@@ -53,7 +53,7 @@ var main = function() {
 	function populateDesc(url2) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			$('<li>').text(xhr.responseTest).prependTo($('.project-slides'));
+			$('<li>').text(xhr.responseTest).appendTo($('.project-slides'));
 		};
 		xhr.open('GET' ,url2, true);
 		xhr.send();
