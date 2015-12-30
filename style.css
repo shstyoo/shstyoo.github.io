@@ -161,5 +161,6 @@
 .slider img{
 	margin-left: -15px;
 	margin-top: 15px;
+	display: none;
 }
 

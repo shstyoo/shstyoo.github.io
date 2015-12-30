@@ -1,5 +1,5 @@
 var main = function() {
-	
+
 	// Menu Sliding Toggle with buffer (to prevent multiple clicks)
 	$(".menuIconOpen").click(function(){
 		if( !$(".menuIconOpen").hasClass("pending") ) {
@@ -23,7 +23,7 @@ var main = function() {
 			$(".menuIconOpen").show();
 		}
 	});
-	
+
 	// setTimer Functions to remove class {pending} from the icons
 	var removeOpenClass = function() {
 		$(".menuIconOpen").removeClass("pending");
@@ -31,23 +31,32 @@ var main = function() {
 	var removeCloseClass = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
-	
-	// THIS CODE DON'T DO SHIT. FUCK
-	function fetchRepoInfo(){
-		$.get('C:/Users/steve/Documents/Github/Python Scripts/Outputh3.txt', function(data) {
-			var lines = data.split("\n");
-			$.each(lines, function(n, elem) {
-				$('<li>').text(elem).prependTo($('.project-slides'));
-			});
-		});
+
+	function readTextFile("file:///C:/Users/steve/Documents/Github/shstyoo.github.io/pyScripts/outputh3.txt") {
+		var rawFile = new XMLHttpRequest();
+		rawFile.open("GET", file, false);
+		rawFile.onreadystatechange = function() {
+			if(rawFile.readyState == 4)
+			{
+				if(rawFile.status == 200 || rawFile.status == 0)
+				{
+					var allText = rawFile.responseText;
+					alert(allText);
+				}
+			}
+		}
+		rawFile.send(null);
 	}
-	fetchRepoInfo();
-	
-	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...) 
+
+	document.addEventListener("DOMContentLoaded", function() {
+		readTextFile("file:///C:/Users/steve/Documents/Github/shstyoo.github.io/pyScripts/outputh3.txt");
+	});
+
+	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
 		return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
 	}
-	
+
 	$('<li>').text(isOverflowed($('.projname'))).prependTo($('.project-slides'));
 	*/
 }

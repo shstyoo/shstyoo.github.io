@@ -1,2 +1,0 @@
-Index for Github Pages (Personal Site)
-Machine learning algorithm applied to calculating probability of victory in a Dota 2 match.
