@@ -50,7 +50,7 @@ var main = function() {
 		xhr.send();
 	}
 
-	populatePre('outputh3.txt');
+	populatePre('/pyScripts/outputh3.txt');
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
