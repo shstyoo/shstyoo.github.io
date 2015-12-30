@@ -55,10 +55,10 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			$('<li>').text(xhr.responseTest).appendTo($('.project-slides'));
+			$('<li>').text("Hello").appendTo($('.project-slides'));
 		};
 		xhr.open('GET' ,url2, true);
 		xhr.send();
-		xhr.abort();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
