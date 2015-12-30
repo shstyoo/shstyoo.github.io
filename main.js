@@ -32,6 +32,8 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 
+	// AJAX TESTING
+
 	$('<li>').text("fuck").prependTo($('.project-slides'));
 
 	function populatePre(url) {
