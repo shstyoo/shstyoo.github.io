@@ -10,7 +10,6 @@ var main = function() {
 			$(".menuIconOpen").hide();
 			//$(".menuIconClose").fadeIn(200);
 			$(".menuIconClose").show();
-			
 		}
 	});
 	$(".menuIconClose").click(function() {
@@ -33,6 +32,24 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 	
+	// THIS CODE DON'T DO SHIT. FUCK
+	function fetchRepoInfo(){
+		$.get('C:/Users/steve/Documents/Github/Python Scripts/Outputh3.txt', function(data) {
+			var lines = data.split("\n");
+			$.each(lines, function(n, elem) {
+				$('<li>').text(elem).prependTo($('.project-slides'));
+			});
+		});
+	}
+	fetchRepoInfo();
+	
+	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...) 
+	function isOverflowed(element){
+		return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+	}
+	
+	$('<li>').text(isOverflowed($('.projname'))).prependTo($('.project-slides'));
+	*/
 }
 
 $(document).ready(main);

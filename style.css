@@ -121,6 +121,10 @@
 
 /* Project Slider Styling */
 
+.slider ul {
+	display: inline;
+}
+
 .slider h2 {
 	margin-top: 50px;
 	padding-left: 200px;
@@ -129,7 +133,11 @@
 }
 
 .slider h3 {
+	margin-top: 35px;
 	font-size: 25px;
+	width: 250px;
+	height: 65px;
+	border: 2px solid red;
 	/*margin-left: -150px;*/
 }
 
