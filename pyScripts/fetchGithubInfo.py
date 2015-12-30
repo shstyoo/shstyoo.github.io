@@ -1,6 +1,6 @@
 import urllib
 import time
-from selenium import webdriver 
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,7 +12,7 @@ driver = webdriver.PhantomJS('C:/Users/steve/Documents/GitHub/shstyoo.github.io/
 driver.get("https://github.com/shstyoo?tab=repositories")
 
 #Wait for page to load in JS until "repo-list" has been rendered
-#If page fails to find item in time throw exception 
+#If page fails to find item in time throw exception
 
 printMessage = ""
 
@@ -29,7 +29,7 @@ pitem = driver.find_elements_by_class_name("repo-list-description")
 
 #Iterate and write only H3 elements to text file
 text_file = open("Outputh3.txt", "w")
-for items in h3item: 
+for items in h3item:
 	text = items.text
 	print(text)
 	text_file.write(text)
@@ -59,5 +59,5 @@ for i, line in enumerate(fp):
 	print(line)
 
 fp.close()
-	
+
 driver.quit()

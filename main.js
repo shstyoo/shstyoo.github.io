@@ -32,25 +32,16 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 
-	function readTextFile("file:///C:/Users/steve/Documents/Github/shstyoo.github.io/pyScripts/outputh3.txt") {
-		var rawFile = new XMLHttpRequest();
-		rawFile.open("GET", file, false);
-		rawFile.onreadystatechange = function() {
-			if(rawFile.readyState == 4)
-			{
-				if(rawFile.status == 200 || rawFile.status == 0)
-				{
-					var allText = rawFile.responseText;
-					alert(allText);
-				}
-			}
-		}
-		rawFile.send(null);
+	function populatePre(url) {
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function () {
+			document.getElementById('contents').textContent = this.reponseText;
+		};
+		xhr.open('GET', url);
+		xhr.send();
 	}
 
-	document.addEventListener("DOMContentLoaded", function() {
-		readTextFile("file:///C:/Users/steve/Documents/Github/shstyoo.github.io/pyScripts/outputh3.txt");
-	});
+	populatePre('outputh3.txt');
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
