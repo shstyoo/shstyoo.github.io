@@ -33,24 +33,32 @@ var main = function() {
 	}
 
 	// AJAX TESTING
-
-	$('<li>').text("test").prependTo($('.project-slides'));
-
-	function populatePre(url) {
+	// Function to populate repo names
+	function populateName(url) {
+		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-
+			// Get the data and populate website with it
 			$('<li>').text(xhr.responseText).prependTo($('.project-slides'));
-
 		};
+		// Send request to server
 		xhr.open('GET', url, true);
-
-		$('<li>').text("test #2").prependTo($('.project-slides'));
-
 		xhr.send();
 	}
+	// Run function to populate repo name
+	populateName('/pyScripts/Outputh3.txt');
 
-	populatePre('/pyScripts/outputh3.txt');
+	// Function to populate repo descriptions
+	// Same skeleton as populateName
+	function populateDesc(url) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			$('<li>').text(xhr.responseTest).prependTo($('.project-slides'));
+		};
+		xhr.open('GET' ,url, true);
+		xhr.send();
+	}
+	populateDesc('/pyScripts/Outputp.txt');
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){

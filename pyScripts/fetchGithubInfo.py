@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 #Open up phantomJS and fetch Github repo information
 
-driver = webdriver.PhantomJS('C:/Users/steve/Documents/GitHub/shstyoo.github.io/Python Scripts/phantomjs.exe')
+driver = webdriver.PhantomJS('C:/Users/steve/Documents/GitHub/shstyoo.github.io/pyScripts/phantomjs.exe')
 driver.get("https://github.com/shstyoo?tab=repositories")
 
 #Wait for page to load in JS until "repo-list" has been rendered
