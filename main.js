@@ -58,6 +58,7 @@ var main = function() {
 		};
 		xhr.open('GET' ,url2, true);
 		xhr.send();
+		xhr.abort();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
