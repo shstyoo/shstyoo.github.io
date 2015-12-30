@@ -40,8 +40,7 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			// Get the data and populate website with it
-			//$('project-slide-current').text(xhr.responseText);
-			$('.project-slide-current').text("Test 1");
+			$('#projName').text(xhr.responseText);
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
