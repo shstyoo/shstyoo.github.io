@@ -34,7 +34,7 @@ var main = function() {
 
 	// AJAX TESTING
 	// Function to populate repo names
-	
+	/*
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
@@ -48,15 +48,15 @@ var main = function() {
 	}
 	// Run function to populate repo name
 	populateName('/pyScripts/Outputh3.txt');
+	*/
 
-	/*
 	// Function to populate repo descriptions
 	// Same skeleton as populateName
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			$('<li>').text(xhr.responseTest).text($('.project-slides'));
-			$('<li>').text("Hello").appendTo($('.project-slides'));
+			$('li').text(xhr.responseTest).text($('.project-slides'));
+			$('li').text("Hello").appendTo($('.project-slides'));
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
