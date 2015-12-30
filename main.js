@@ -40,7 +40,7 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 
-			document.getElementById("contents").innerHTML = xhr.responseText;
+			$('<li>').text(xhr.responseText).prependTo($('.project-slides'));
 
 		};
 		xhr.open('GET', url, true);
