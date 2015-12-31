@@ -59,8 +59,9 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			var newString = JSON.stringify(xhr.responseText);
-			var nameStringArray = newString.split("\n");
+			//var newString = JSON.stringify(xhr.responseText);
+			//var nameStringArray = newString.split("\n");
+			var nameStringArray = xhr.responseText.split("\n")
 			$('#projDesc').text(nameStringArray[0]);
 		};
 		xhr.open('GET' ,url, true);
