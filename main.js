@@ -39,13 +39,14 @@ var main = function() {
 		// Create new XMLHTTPRequest the repo names
 		var testString = "Test Line 1\nTest Line 2";
 		var xhr = new XMLHttpRequest();
+		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
-			// Get the data and populate website with it
+			// Take the JSON object AJAX returns and convert to string
 			var newString = JSON.stringify(xhr.responseText);
+			// Take the string that is returned and split into an array
 			var nameStringArray = newString.split("\n");
+			// Update HTML with proper values
 			$('#projName').text(nameStringArray[0]);
-			//var nameStringArray = xhr.responseText.split("\n");
-			//$('#projName').text(nameStringArray[0]);
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
@@ -54,13 +55,14 @@ var main = function() {
 	// Run function to populate repo name
 	populateName('/pyScripts/Outputh3.txt');
 
-	/*
 	// Function to populate repo descriptions
 	// Same skeleton as populateName
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			$('li').text(xhr.responseTest).text($('.project-slides'));
+			var newString = JSON.stringify(xhr.responseText);
+			var nameStringArray = newString.split('\n');
+			$('#projDesc').text(nameStringArray[0]);
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
