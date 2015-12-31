@@ -46,7 +46,7 @@ var main = function() {
 			//var nameStringArray = newString.split("\n");
 			// Update HTML with proper values
 			var nameStringArray = xhr.responseText.split("\n");
-			$('#projName').text(nameStringArray[0]);
+			$('#projName').text(nameStringArray[1]);
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
@@ -63,7 +63,7 @@ var main = function() {
 			//var newString = JSON.stringify(xhr.responseText);
 			//var nameStringArray = newString.split("\n");
 			var nameStringArray = xhr.responseText.split("\n");
-			$('#projDesc').text(nameStringArray[0]);
+			$('#projDesc').text(nameStringArray[1]);
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
