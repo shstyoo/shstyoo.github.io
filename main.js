@@ -37,11 +37,15 @@ var main = function() {
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
+		var testString = "Test Line 1\nTest Line 2";
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			// Get the data and populate website with it
-			var nameStringArray = xhr.responseText.split("\n");
+			var newString = JSON.stringify(xhr.responseText);
+			var nameStringArray = newString.split("\n");
 			$('#projName').text(nameStringArray[0]);
+			//var nameStringArray = xhr.responseText.split("\n");
+			//$('#projName').text(nameStringArray[0]);
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
