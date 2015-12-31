@@ -37,14 +37,13 @@ var main = function() {
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
-		var testString = "Test Line 1\nTest Line 2";
 		var xhr = new XMLHttpRequest();
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
 			// Take the JSON object AJAX returns and convert to string
 			var newString = JSON.stringify(xhr.responseText);
 			// Take the string that is returned and split into an array
-			var nameStringArray = newString.split("\n");
+			var nameStringArray = newString.split('\n');
 			// Update HTML with proper values
 			$('#projName').text(nameStringArray[0]);
 		};
