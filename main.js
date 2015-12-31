@@ -41,10 +41,11 @@ var main = function() {
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
 			// Take the JSON object AJAX returns and convert to string
-			var newString = JSON.stringify(xhr.responseText);
+			//var newString = JSON.stringify(xhr.responseText);
 			// Take the string that is returned and split into an array
-			var nameStringArray = newString.split("\n");
+			//var nameStringArray = newString.split("\n");
 			// Update HTML with proper values
+			var nameStringArray = xhr.responseText.split("\n");
 			$('#projName').text(nameStringArray[0]);
 		};
 		// Send request to server
@@ -61,7 +62,7 @@ var main = function() {
 		xhr.onreadystatechange = function() {
 			//var newString = JSON.stringify(xhr.responseText);
 			//var nameStringArray = newString.split("\n");
-			var nameStringArray = xhr.responseText.split("\n")
+			var nameStringArray = xhr.responseText.split("\n");
 			$('#projDesc').text(nameStringArray[0]);
 		};
 		xhr.open('GET' ,url, true);
