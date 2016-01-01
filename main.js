@@ -34,11 +34,6 @@ var main = function() {
 
 	// AJAX TESTING
 	// Function to populate repo names
-
-	// To populate bullet list
-	var numOfBullets = 0;
-	var linenum;
-
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
@@ -53,8 +48,6 @@ var main = function() {
 				$('#projName').text(nameStringArray[0]);
 			}
 		};
-
-		linenum = xhr.responseText.split("\n");
 		// Send request to server
 		xhr.open('GET', url, true);
 		xhr.send();
