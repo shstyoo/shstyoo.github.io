@@ -44,13 +44,16 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
-			// Take the string that is returned and split into an array
-			// Update HTML with proper values
-			nameStringArray = xhr.responseText.split("\n");
-			// Default slide info
-			$('#projName').text(nameStringArray[0]);
-			alert(nameStringArray.length);
-			// Get number of elements
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+
+				// Take the string that is returned and split into an array
+				// Update HTML with proper values
+				nameStringArray = xhr.responseText.split("\n");
+				// Default slide info
+				$('#projName').text(nameStringArray[0]);
+				alert(nameStringArray.length);
+				// Get number of elements
+			}
 		};
 
 		linenum = xhr.responseText.split("\n");
