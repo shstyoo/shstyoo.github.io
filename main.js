@@ -50,7 +50,7 @@ var main = function() {
 			$('#projName').text(nameStringArray[0]);
 			// Get number of elements
 			numOfBullets = nameStringArray.length;
-			$(".slider-dots").append("<li>" + nameStringArray.length + "</li>")
+			$(".slider-dots").append("<li>" + numOfBullets + "</li>")
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
