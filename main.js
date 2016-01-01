@@ -72,6 +72,7 @@ var main = function() {
 		xhr.onreadystatechange = function() {
 			numOfBullets = xhr.responseText;
 			alert(numOfBullets);
+			alert("what");
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
