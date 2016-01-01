@@ -37,7 +37,7 @@ var main = function() {
 
 	// To populate bullet list
 	var numOfBullets = 0;
-	var nameStringArray;
+	var linenum;
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
@@ -52,6 +52,8 @@ var main = function() {
 			alert(nameStringArray.length);
 			// Get number of elements
 		};
+
+		linenum = xhr.responseText.split("\n");
 		// Send request to server
 		xhr.open('GET', url, true);
 		xhr.send();
@@ -72,7 +74,7 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	alert(nameStringArray.length);
+	alert(linenum.length);
 	alert("what");
 
 	/*
