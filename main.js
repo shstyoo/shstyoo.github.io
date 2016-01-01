@@ -71,13 +71,12 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			numOfBullets = xhr.responseText;
+			alert(numOfBullets);
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
 	}
 	populateSliderBullets('/pyScripts/NumOfItem.txt');
-
-	alert(numOfBullets);
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
