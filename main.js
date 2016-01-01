@@ -38,7 +38,7 @@ var main = function() {
 	// To populate bullet list
 	var numOfBullets = 0;
 	var nameStringArray;
-	var counter;
+	var counter = 0;
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
