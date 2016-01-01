@@ -36,7 +36,7 @@ var main = function() {
 	// Function to populate repo names
 
 	// To populate bullet list
-	var numOfBullets = "0";
+	var numOfBullets = 0;
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
@@ -50,7 +50,7 @@ var main = function() {
 			$('#projName').text(nameStringArray[0]);
 			// Get number of elements
 			numOfBullets = nameStringArray.length;
-			$(".slider-dots").append("<li>" + numOfBullets + "</li>")
+			$(".slider-dots").append(numOfBullets)
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
