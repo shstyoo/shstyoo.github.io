@@ -67,6 +67,11 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
+	function getNumofLine(){
+		numOfBullets = nameStringArray.length;
+		alert(numOfBullets);
+	}
+
 	/*
 	$(".slider-dots").append("<li>" + numOfBullets + "</li>")
 
