@@ -102,7 +102,7 @@
 .slider {
 	font-family: 'Droid Sans', sans-serif;
 	min-height: 500px;
-	margin-left: 75px;
+	margin-left: 0px;
 }
 
 /* Header Styling */
@@ -168,5 +168,4 @@
 .slider img{
 	margin-left: -15px;
 	margin-top: 15px;
-	display: none;
 }

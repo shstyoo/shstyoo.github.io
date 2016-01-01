@@ -40,13 +40,11 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
-			// Take the JSON object AJAX returns and convert to string
-			//var newString = JSON.stringify(xhr.responseText);
 			// Take the string that is returned and split into an array
-			//var nameStringArray = newString.split("\n");
 			// Update HTML with proper values
 			var nameStringArray = xhr.responseText.split("\n");
-			$('#projName').text(nameStringArray[1]);
+			// Default slide info
+			$('#projName').text(nameStringArray[0]);
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
@@ -60,15 +58,15 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			//var newString = JSON.stringify(xhr.responseText);
-			//var nameStringArray = newString.split("\n");
 			var nameStringArray = xhr.responseText.split("\n");
-			$('#projDesc').text(nameStringArray[1]);
+			$('#projDesc').text(nameStringArray[0]);
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
+
+	$
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
