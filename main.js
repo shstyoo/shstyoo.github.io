@@ -44,15 +44,13 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
+			// Make sure server response is good
 			if(xhttp.readyState == 4 && xhttp.status == 200){
-
 				// Take the string that is returned and split into an array
 				// Update HTML with proper values
 				nameStringArray = xhr.responseText.split("\n");
 				// Default slide info
 				$('#projName').text(nameStringArray[0]);
-				alert(nameStringArray.length);
-				// Get number of elements
 			}
 		};
 
@@ -69,16 +67,15 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			var nameStringArray = xhr.responseText.split("\n");
-			$('#projDesc').text(nameStringArray[0]);
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+				var nameStringArray = xhr.responseText.split("\n");
+				$('#projDesc').text(nameStringArray[0]);
+			}
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
-
-	alert(linenum.length);
-	alert("what");
 
 	/*
 	$(".slider-dots").append("<li>" + numOfBullets + "</li>")
