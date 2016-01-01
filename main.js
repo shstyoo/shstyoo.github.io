@@ -71,8 +71,7 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			numOfBullets = xhr.responseText;
-			alert(numOfBullets);
-			alert("what");
+			$('#-of-bullets').text(numOfBullets);
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
