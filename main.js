@@ -34,6 +34,8 @@ var main = function() {
 
 	// AJAX TESTING
 	// Function to populate repo names
+	var numOfBullets;
+	var nameStringArray;
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
@@ -41,7 +43,7 @@ var main = function() {
 		xhr.onreadystatechange = function() {
 			// Take the string that is returned and split into an array
 			// Update HTML with proper values
-			var nameStringArray = xhr.responseText.split("\n");
+			nameStringArray = xhr.responseText.split("\n");
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
 		};
@@ -57,7 +59,7 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			var nameStringArray = xhr.responseText.split("\n");
+			nameStringArray = xhr.responseText.split("\n");
 			$('#projDesc').text(nameStringArray[0]);
 		};
 		xhr.open('GET' ,url, true);
