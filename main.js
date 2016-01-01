@@ -35,6 +35,9 @@ var main = function() {
 	// AJAX TESTING
 	// Function to populate repo names
 
+	// To populate bullet list
+	var numOfBullets = 0;
+
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
@@ -45,6 +48,8 @@ var main = function() {
 			var nameStringArray = xhr.responseText.split("\n");
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
+			// Get number of elements
+			numOfBullets = nameStringArray.length - 1;
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
@@ -66,7 +71,12 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	$
+	function populateSliderBullets(num) {
+		for(x=1; x<num-1; x++) {
+			$(".slider-dots").append("<li class=\"dot\">&bull;</li>");
+		}
+	}
+	populateSliderBullets(numOfBullets);
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
