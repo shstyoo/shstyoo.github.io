@@ -62,7 +62,7 @@ var main = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			if(xhttp.readyState == 4 && xhttp.status == 200){
-				var nameStringArray = xhr.responseText.split("\n");
+				nameStringArray = xhr.responseText.split("\n");
 				$('#projDesc').text(nameStringArray[0]);
 			}
 		};
