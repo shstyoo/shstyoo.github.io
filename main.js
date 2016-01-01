@@ -33,17 +33,21 @@ var main = function() {
 	}
 
 	// AJAX TESTING
+	var nameStringArray
 	// Function to populate repo names
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
 		var xhr = new XMLHttpRequest();
 		// Get the data and populate website with it
 		xhr.onreadystatechange = function() {
-			// Take the string that is returned and split into an array
-			// Update HTML with proper values
-			nameStringArray = xhr.responseText.split("\n");
-			// Default slide info
-			$('#projName').text(nameStringArray[0]);
+			// Make sure server response is good
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+				// Take the string that is returned and split into an array
+				// Update HTML with proper values
+				nameStringArray = xhr.responseText.split("\n");
+				// Default slide info
+				$('#projName').text(nameStringArray[0]);
+			}
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
@@ -57,8 +61,10 @@ var main = function() {
 	function populateDesc(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			var nameStringArray = xhr.responseText.split("\n");
-			$('#projDesc').text(nameStringArray[0]);
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+				var nameStringArray = xhr.responseText.split("\n");
+				$('#projDesc').text(nameStringArray[0]);
+			}
 		};
 		xhr.open('GET' ,url, true);
 		xhr.send();
