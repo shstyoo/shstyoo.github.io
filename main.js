@@ -33,7 +33,7 @@ var main = function() {
 	}
 
 	// AJAX TESTING
-	var nameStringArray
+	var nameStringArray;
 	// Function to populate repo names
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
