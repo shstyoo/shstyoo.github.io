@@ -71,6 +71,7 @@ var main = function() {
 		numOfBullets = nameStringArray.length;
 		alert(numOfBullets);
 	}
+	getNumofLine();
 
 	/*
 	$(".slider-dots").append("<li>" + numOfBullets + "</li>")
