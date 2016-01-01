@@ -72,8 +72,8 @@ var main = function() {
 	populateDesc('/pyScripts/Outputp.txt');
 
 	function populateSliderBullets(num) {
-		for(x=1; x<num-1; x++) {
-			$(".slider-dots").append("<li class=\"dot\">&bull;</li>");
+		for(x=0; x<num-1; x++) {
+			$(".slider-dots").append("<li>&bull;</li>");
 		}
 	}
 	populateSliderBullets(numOfBullets);
