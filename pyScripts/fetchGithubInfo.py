@@ -26,6 +26,7 @@ except:
 #items = elem.find_elements_by_tag_name("li")
 h3item = driver.find_elements_by_class_name("repo-list-name")
 pitem = driver.find_elements_by_class_name("repo-list-description")
+numItem = str(len(pitem))
 
 #Iterate and write only H3 elements to text file
 text_file = open("Outputh3.txt", "w")
@@ -33,7 +34,7 @@ for items in h3item:
 	text = items.text
 	print(text)
 	text_file.write(text)
-	text_file.write('\n')
+	text_file.write("\n")
 text_file.close()
 
 #Iterate and write only P elements to text file
@@ -42,8 +43,13 @@ for items in pitem:
 	text = items.text
 	print(text)
 	text_file2.write(text)
-	text_file2.write('\n')
+	text_file2.write("\n")
 text_file2.close()
+
+text_file3 = open("NumOfItem.txt", "w")
+text_file3.write(numItem)
+print(numItem)
+text_file3.close()
 
 #DEBUG OUTPUT
 fp = open("Outputh3.txt")

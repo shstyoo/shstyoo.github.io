@@ -67,21 +67,17 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	function getNumofLine(){
-		numOfBullets = nameStringArray.length;
-		alert(numOfBullets);
+	function populateSliderBullets(url) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			numOfBullets = xhr.responseText;
+		};
+		xhr.open('GET' ,url, true);
+		xhr.send();
 	}
-	getNumofLine();
+	populateSliderBullets('/pyScripts/NumOfItem.txt');
 
-	/*
-	$(".slider-dots").append("<li>" + numOfBullets + "</li>")
-
-	function populateSliderBullets(num) {
-		for(x=0; x<num-1; x++) {
-			$(".slider-dots").append("<li>&bull;</li>");
-		}
-	}
-	populateSliderBullets(numOfBullets);
+	alert(numOfBullets);
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
