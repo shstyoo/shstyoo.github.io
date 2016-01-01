@@ -49,8 +49,8 @@ var main = function() {
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
 			// Get number of elements
-			numOfBullets = nameStringArray.length - 1;
-			$(".slider-dots").append("<li>" + nameStringArray.length -1; + "</li>")
+			numOfBullets = nameStringArray.length;
+			$(".slider-dots").append("<li>" + nameStringArray.length -1 + "</li>")
 		};
 		// Send request to server
 		xhr.open('GET', url, true);
