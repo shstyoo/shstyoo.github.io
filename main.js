@@ -67,6 +67,8 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
+	//ASYNCHRONUS NONSENSE SHIT GOES HERE FUCK ME FUCK FUCK FUCK
+
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
