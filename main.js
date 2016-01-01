@@ -72,7 +72,7 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	alert(nameStringArray.length);
+	alert(nameStringArray.length + "what");
 
 	/*
 	$(".slider-dots").append("<li>" + numOfBullets + "</li>")
