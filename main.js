@@ -49,9 +49,10 @@ var main = function() {
 			nameStringArray = xhr.responseText.split("\n");
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
-			alert(nameStringArray.length);
+			numOfBullets = xhr.responseText.split("\n");
 			// Get number of elements
 		};
+		$(".slider-dots").append(numOfBullets.length)
 		// Send request to server
 		xhr.open('GET', url, true);
 		xhr.send();
