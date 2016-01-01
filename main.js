@@ -38,7 +38,6 @@ var main = function() {
 	// To populate bullet list
 	var numOfBullets = 0;
 	var nameStringArray;
-	var counter = 0;
 
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
@@ -51,7 +50,6 @@ var main = function() {
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
 			// Get number of elements
-			counter++;
 		};
 		numOfBullets = counter;
 		$(".slider-dots").append(numOfBullets)
