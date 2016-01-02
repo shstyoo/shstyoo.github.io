@@ -67,7 +67,8 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	//ASYNCHRONUS NONSENSE SHIT GOES HERE FUCK ME FUCK FUCK FUCK
+	// Figure out how to make AJAX request synchronous so that we can make sure we can
+	// manipulate the variables after the page starts its load.
 
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
