@@ -69,6 +69,7 @@ var main = function() {
 
 	// Figure out how to make AJAX request synchronous so that we can make sure we can
 	// manipulate the variables after the page starts its load.
+	// Jan4 update.
 
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
