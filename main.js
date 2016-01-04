@@ -34,7 +34,7 @@ var main = function() {
 
 	// AJAX TESTING
 	// Function to populate repo names
-	var numOfBullets = "3";
+	var numOfBullets;
 	var nameStringArray;
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
@@ -70,7 +70,7 @@ var main = function() {
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			//numOfBullets = xhr.responseText;
+			numOfBullets = xhr.responseText;
 		};
 		// Set 3rd parameter as "False" to prevent asynchronous request
 		xhr.open('GET' ,url, false);
@@ -80,7 +80,7 @@ var main = function() {
 	alert(numOfBullets);
 
 	for(i=1;i<numOfBullets;i++) {
-		$('.slider-dots').append('<li>bullet2</li>');
+		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
