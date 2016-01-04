@@ -66,9 +66,10 @@
 
 		<!-- Slider (contains active project slide) -->
 				<div class="slider">
-					<div class="slide active-slide">
-						<div class="row">
-							<ul class="project-slides">
+					<div class="row">
+						<ul class="project-slides">
+
+							<div class="slide active-slide">
 								<li class="project-slide-current">
 									<div class="col-xs-4" id="noWrapProjInfo">
 										<span class="text-nowrap"><h3 id="projName">Fetch project name from github</h3></span>
@@ -81,44 +82,33 @@
 										<img src="Textures/Menu-Background/placeholder.png" alt="Project Picture">
 									</div>
 								</li>
-								<!--
-								<li class="project-slide-next">
-									<div class="col-xs-4" id="noWrapProjInfo">
-										<span class="text-nowrap"><h3 id="projName">Fetch project name from github</h3></span>
-										<p id="projDesc">Fetch project description from github. The quick brown fox jumps over the lazy dog</p>
-										<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
-										<p id="date">Made on: 00/00/0000</p>
-										<p id="commitDesc">Fetch recent commit from github. The quick brown fox...</p>
-									</div>
-									<div class="col-xs-8" id="noWrapProjImg">
-										<img src="Textures/Menu-Background/placeholder.png" alt="Project Picture">
-									</div>
-								</li>
-								<li class="project-slide-previous">
-									<div class="col-xs-4" id="noWrapProjInfo">
-										<span class="text-nowrap"><h3 id="projName">Fetch project name from github</h3></span>
-										<p id="projDesc">Fetch project description from github. The quick brown fox jumps over the lazy dog</p>
-										<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
-										<p id="date">Made on: 00/00/0000</p>
-										<p id="commitDesc">Fetch recent commit from github. The quick brown fox...</p>
-									</div>
-									<div class="col-xs-8" id="noWrapProjImg">
-										<img src="Textures/Menu-Background/placeholder.png" alt="Project Picture">
-									</div>
-								</li>
-								-->
-							</ul>
-						</div>
-						<div class="row">
-							<div class="col-xs-12" id="slider-nav-dots">
-								<img src="Textures/Slide-Background/prev-transparent.png" alt="previous arrow" id="arrow-left"></img>
-								<ul class="slider-dots">
-									<li class="dot active-dot">&bull;</li>
-								</ul>
-								<img src="Textures/Slide-Background/next-transparent.png" alt="next arrow" id="arrow-right"></img>
 							</div>
-						</div>
+
+							<div class="slide">
+								<li class="project-slide">
+									<div class="col-xs-4" id="noWrapProjInfo">
+										<span class="text-nowrap"><h3 id="projName">Fetch project name from github</h3></span>
+										<p id="projDesc">Fetch project description from github. The quick brown fox jumps over the lazy dog</p>
+										<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+										<p id="date">Made on: 00/00/0000</p>
+										<p id="commitDesc">Fetch recent commit from github. The quick brown fox...</p>
+									</div>
+									<div class="col-xs-8" id="noWrapProjImg">
+										<img src="Textures/Menu-Background/placeholder.png" alt="Project Picture">
+									</div>
+								</li>
+							</div>
+						</ul>
 					</div>
+				</div>
+
+				<div class="slider-nav">
+					<img src="Textures/Slide-Background/prev-transparent.png" alt="previous arrow" id="arrow-prev"></img>
+					<ul class="slider-dots">
+						<li class="dot active-dot">&bull;</li>
+						<li class="dot">&bull;</li>
+					</ul>
+					<img src="Textures/Slide-Background/next-transparent.png" alt="next arrow" id="arrow-next"></img>
 				</div>
 
 		<!-- NewsFeed (list of recently updated projects) -->

@@ -47,8 +47,8 @@ var main = function() {
 			// Default slide info
 			$('#projName').text(nameStringArray[0]);
 		};
-		// Send request to server
-		xhr.open('GET', url, true);
+		// Send synchronous request to server
+		xhr.open('GET', url, false);
 		xhr.send();
 	}
 	// Run function to populate repo name
@@ -62,7 +62,7 @@ var main = function() {
 			nameStringArray = xhr.responseText.split("\n");
 			$('#projDesc').text(nameStringArray[0]);
 		};
-		xhr.open('GET' ,url, true);
+		xhr.open('GET' ,url, false);
 		xhr.send();
 	}
 	populateDesc('/pyScripts/Outputp.txt');
@@ -72,7 +72,6 @@ var main = function() {
 		xhr.onreadystatechange = function() {
 			numOfBullets = xhr.responseText;
 		};
-		// Set 3rd parameter as "False" to prevent asynchronous request
 		xhr.open('GET' ,url, false);
 		xhr.send();
 	}
@@ -82,6 +81,23 @@ var main = function() {
 	for(i=1;i<numOfBullets;i++) {
 		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
+
+	$('#arrow-next').click(function() {
+		// Functionality for slide changing (next)
+		var currrentSlide = $('.active-slide');
+		var nextSlide = currentSlide.next();
+
+		// Functionality for dot changing (next)
+		var currentDot = $('.active-dot');
+		var nextDot = currentDot.next();
+
+		if(nextSlide.length == 0){
+			nextDot = $('.dot').first();
+		}
+
+		currentDot.removeClass('active-dot');
+		nextDot.addClass('active-dot');
+	});
 
 	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
 	function isOverflowed(element){
