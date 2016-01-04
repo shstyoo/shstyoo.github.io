@@ -34,7 +34,7 @@ var main = function() {
 
 	// AJAX TESTING
 	// Function to populate repo names
-	var numOfBullets;
+	var numOfBullets = "3";
 	var nameStringArray;
 	function populateName(url) {
 		// Create new XMLHTTPRequest the repo names
@@ -70,7 +70,7 @@ var main = function() {
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
-			numOfBullets = xhr.responseText;
+			//numOfBullets = xhr.responseText;
 		};
 		// Set 3rd parameter as "False" to prevent asynchronous request
 		xhr.open('GET' ,url, false);
