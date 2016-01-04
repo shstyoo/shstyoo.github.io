@@ -67,16 +67,13 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
-	// Figure out how to make AJAX request synchronous so that we can make sure we can
-	// manipulate the variables after the page starts its load.
-	// Jan4 update.
-
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			numOfBullets = xhr.responseText;
 			$('#-of-bullets').text(numOfBullets);
 		};
+		// Set 3rd parameter as "False" to prevent asynchronous request
 		xhr.open('GET' ,url, false);
 		xhr.send();
 	}
