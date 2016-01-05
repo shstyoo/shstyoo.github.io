@@ -33,7 +33,6 @@ var main = function() {
 	}
 
 	$('#arrow-next').click(function() {
-		alert("Next Click");
 		var currentDot = $('.active-dot');
 		var nextDot = currentDot.next();
 
@@ -46,7 +45,6 @@ var main = function() {
 	});
 
 	$('#arrow-prev').click(function() {
-		alert("Prev Click");
 		var currentDot = $('.active-dot');
 		var prevDot = currentDot.prev();
 
