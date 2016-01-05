@@ -82,19 +82,13 @@ var main = function() {
 		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
 
+	// ARROW NEXT NOT FUCKING WORKING!!!!!!!
 	$('#arrow-next').click(function() {
-		// Functionality for slide changing (next)
-		var currrentSlide = $('.active-slide');
-		var nextSlide = currentSlide.next();
 
 		// Functionality for dot changing (next)
 		var currentDot = $('.active-dot');
 		var nextDot = currentDot.next();
-
-		if(nextSlide.length == 0){
-			nextDot = $('.dot').first();
-		}
-
+		alert("Next Click");
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
 	});

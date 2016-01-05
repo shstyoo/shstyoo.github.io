@@ -178,12 +178,18 @@
 	margin-top: 15px;
 }
 
-#arrow-prev, #arrow-next{
+.slider-nav-left, .slider-nav-right {
 	display: inline-block;
-	vertical-align: top;
-	margin-top: 9px;
-	height: 35px;
-	width: 35px;
+}
+
+#arrow-prev, #arrow-next{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 8px;
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
 }
 
 .slider-nav {
@@ -203,6 +209,7 @@
 	color: #aaaaaa;
 	display: inline;
 	font-size: 30px;
+	top: 50px;
 }
 
 .slider-dots li.active-dot {
