@@ -32,6 +32,38 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 
+	$('#arrow-next').click(function() {
+		alert("Next Click");
+		var currentDot = $('.active-dot');
+		var nextDot = currentDot.next();
+
+		if(nextDot.length == 0){
+			nextDot = $('.dot').first();
+		}
+
+		currentDot.removeClass('active-dot');
+		nextDot.addClass('active-dot');
+	});
+
+	$('#arrow-prev').click(function() {
+		alert("Prev Click");
+		var currentDot = $('.active-dot');
+		var prevDot = currentDot.prev();
+
+		if(prevDot.length == 0){
+			prevDot = $('.dot').last();
+		}
+
+		currentDot.removeClass('active-dot');
+		prevDot.addClass('active-dot');
+	});
+
+	/* *****************************************************************
+	// ANY CODE DOWN HERE WILL NOT WORK ON A LOCAL MACHINE SINCE
+	// AJAX MAKES A SERVER CALL, UNLESS THE SERVER IS CAPABLE OF
+	// HANDLING AN AJAX REQUEST THE CODE WONT DEBUG AFTER THIS POINT
+	******************************************************************** */
+
 	// AJAX TESTING
 	// Function to populate repo names
 	var numOfBullets;
@@ -81,25 +113,6 @@ var main = function() {
 	for(i=1;i<numOfBullets;i++) {
 		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
-
-	// ARROW NEXT NOT FUCKING WORKING!!!!!!!
-	$('#arrow-next').click(function() {
-		alert("Next Click");
-		// Functionality for dot changing (next)
-		var currentDot = $('.active-dot');
-		var nextDot = currentDot.next();
-
-		currentDot.removeClass('active-dot');
-		nextDot.addClass('active-dot');
-	});
-
-	/* !!! NOT A PRIORITY !!! Used to see if an element is overflowing (to show/hide etc...)
-	function isOverflowed(element){
-		return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
-	}
-
-	$('<li>').text(isOverflowed($('.projname'))).prependTo($('.project-slides'));
-	*/
 }
 
 $(document).ready(main);
