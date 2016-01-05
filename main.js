@@ -84,11 +84,11 @@ var main = function() {
 
 	// ARROW NEXT NOT FUCKING WORKING!!!!!!!
 	$('#arrow-next').click(function() {
-
+		alert("Next Click");
 		// Functionality for dot changing (next)
 		var currentDot = $('.active-dot');
 		var nextDot = currentDot.next();
-		alert("Next Click");
+
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
 	});
