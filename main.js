@@ -97,6 +97,7 @@ var main = function() {
 	}
 	populateDesc('/pyScripts/Outputp.txt');
 
+	// This code is designed to populate the slider bullets
 	function populateSliderBullets(url) {
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
@@ -107,7 +108,6 @@ var main = function() {
 	}
 	populateSliderBullets('/pyScripts/NumOfItem.txt');
 	alert(numOfBullets);
-
 	for(i=1;i<numOfBullets;i++) {
 		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
