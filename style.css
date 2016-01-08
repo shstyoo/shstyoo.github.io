@@ -132,7 +132,7 @@
 	text-align: center;
 }
 
-.project-slide-current, .project-slide-previous, .project-slide-next {
+.project-slide {
 	display: block;
 }
 
