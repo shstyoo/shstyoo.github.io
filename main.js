@@ -32,6 +32,7 @@ var main = function() {
 		$(".menuIconClose").removeClass("pending");
 	}
 
+	// Slider nav arrow functinality (loops back if end of line is met)
 	$('#arrow-next').click(function() {
 		var currentDot = $('.active-dot');
 		var nextDot = currentDot.next();
