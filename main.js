@@ -57,6 +57,8 @@ var main = function() {
 		prevDot.addClass('active-dot');
 	});
 
+	$('.project-slides').append()
+
 	/* *****************************************************************
 	// ANY CODE DOWN HERE WILL NOT WORK ON A LOCAL MACHINE SINCE
 	// AJAX MAKES A SERVER CALL, UNLESS THE SERVER IS CAPABLE OF
