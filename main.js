@@ -114,6 +114,9 @@ var main = function() {
 	for(i=1;i<numOfBullets;i++) {
 		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
 	}
+	for(i=1;i<numOfBullets;i++) {
+		$('.project-slides').clone().append($('.slide-template').html());
+	}
 }
 
 $(document).ready(main);
