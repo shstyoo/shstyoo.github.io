@@ -118,9 +118,10 @@ var main = function() {
 		$('.project-slides').clone().append($('.slide-template').html());
 		$('.slide-template').addClass('slide');
 		$('.slide-template').removeClass('slide-template');
-		alert('hiding class 2');
+		alert('hiding class 3');
 		$('.slide').find('.project-slide').addClass('1');
 		alert('showing class');
+		$('.slide').find('.1').removeClass('project-slide');
 	}
 }
 
