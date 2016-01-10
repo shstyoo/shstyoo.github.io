@@ -116,6 +116,8 @@ var main = function() {
 	}
 	for(i=1;i<numOfBullets;i++) {
 		$('.project-slides').clone().append($('.slide-template').html());
+		$('.slide-template').addClass('slide');
+		$('.slide-template').removeClass('slide-template');
 	}
 }
 
