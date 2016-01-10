@@ -119,7 +119,7 @@ var main = function() {
 		$('.slide-template').addClass('slide');
 		$('.slide-template').removeClass('slide-template');
 		alert('hiding class 1');
-		$('.slide').find('project-slide').addClass('1');
+		$('.slide').find('.project-slide').addClass('1');
 		alert('showing class');
 	}
 }
