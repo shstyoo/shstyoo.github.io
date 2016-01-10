@@ -118,8 +118,8 @@ var main = function() {
 		$('.project-slides').clone().append($('.slide-template').html());
 		$('.slide-template').addClass('slide');
 		$('.slide-template').removeClass('slide-template');
-		alert('hiding class');
-		$('.slide').find('project-slide').addClass(i);
+		alert('hiding class 1');
+		$('.slide').find('project-slide').addClass('1');
 		alert('showing class');
 	}
 }
