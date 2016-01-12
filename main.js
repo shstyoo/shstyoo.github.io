@@ -45,8 +45,8 @@ var main = function() {
 			nextSlide = $('.slide').first();
 		}
 
-		currentSlide.removeClass('active-slide');
-		nextSlide.addClass('active-slide');
+		currentSlide.fadeOut(600).removeClass('active-slide');
+		nextSlide.fadeIn(600).addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
@@ -64,8 +64,8 @@ var main = function() {
 			prevSlide =$('.slide').last();
 		}
 
-		currentSlide.removeClass('active-slide');
-		prevSlide.addClass('active-slide');
+		currentSlide.fadeOut(600).removeClass('active-slide');
+		prevSlide.fadeIn(600).addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		prevDot.addClass('active-dot');
