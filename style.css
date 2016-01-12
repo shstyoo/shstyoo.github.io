@@ -136,10 +136,6 @@
 	display: block;
 }
 
-.project-slide-previous, .project-slide-next {
-	display: none;
-}
-
 .slider h3 {
 	margin-top: 35px;
 	font-size: 25px;
@@ -151,10 +147,6 @@
 .slider p {
 	font-size: 18px;
 	/*margin-left: -150px;*/
-}
-
-.slide-template {
-	display: none;
 }
 
 .slide {
@@ -173,6 +165,7 @@
 #noWrapProjImg {
 	width: 415px;
 }
+
 .col-xs-8 noWrapProjImg {
 	width: 415px;
 }

@@ -34,91 +34,42 @@ var main = function() {
 
 	// Slider nav arrow functinality (loops back if end of line is met)
 	$('#arrow-next').click(function() {
+		var currentSlide = $('.active-slide');
+		var nextSlide = currentSlide.next();
+
 		var currentDot = $('.active-dot');
 		var nextDot = currentDot.next();
 
 		if(nextDot.length == 0){
 			nextDot = $('.dot').first();
+			nextSlide = $('.slide').first();
 		}
+
+		currentSlide.removeClass('active-slide');
+		nextSlide.addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
 	});
 
 	$('#arrow-prev').click(function() {
+		var currentSlide = $('.active-slide');
+		var prevSlide = currentSlide.prev();
+
 		var currentDot = $('.active-dot');
 		var prevDot = currentDot.prev();
 
 		if(prevDot.length == 0){
 			prevDot = $('.dot').last();
+			prevSlide =$('.slide').last();
 		}
+
+		currentSlide.removeClass('active-slide');
+		prevSlide.addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		prevDot.addClass('active-dot');
 	});
-
-	$('.project-slides').append()
-
-	/* *****************************************************************
-	// ANY CODE DOWN HERE WILL NOT WORK ON A LOCAL MACHINE SINCE
-	// AJAX MAKES A SERVER CALL, UNLESS THE SERVER IS CAPABLE OF
-	// HANDLING AN AJAX REQUEST THE CODE WONT DEBUG AFTER THIS POINT
-	******************************************************************** */
-
-	// AJAX TESTING
-	// Function to populate repo names
-	var numOfBullets;
-	var nameStringArray;
-	function populateName(url) {
-		// Create new XMLHTTPRequest the repo names
-		var xhr = new XMLHttpRequest();
-		// Get the data and populate website with it
-		xhr.onreadystatechange = function() {
-			// Take the string that is returned and split into an array
-			// Update HTML with proper values
-			nameStringArray = xhr.responseText.split("\n");
-			// Default slide info
-			$('#projName').text(nameStringArray[0]);
-		};
-		// Send synchronous request to server
-		xhr.open('GET', url, false);
-		xhr.send();
-	}
-	// Run function to populate repo name
-	populateName('/pyScripts/Outputh3.txt');
-
-	// Function to populate repo descriptions
-	// Same skeleton as populateName
-	function populateDesc(url) {
-		var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function() {
-			nameStringArray = xhr.responseText.split("\n");
-			$('#projDesc').text(nameStringArray[0]);
-		};
-		xhr.open('GET' ,url, false);
-		xhr.send();
-	}
-	populateDesc('/pyScripts/Outputp.txt');
-
-	// This code is designed to populate the slider bullets
-	function populateSliderBullets(url) {
-		var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function() {
-			numOfBullets = xhr.responseText;
-		};
-		xhr.open('GET' ,url, false);
-		xhr.send();
-	}
-	populateSliderBullets('/pyScripts/NumOfItem.txt');
-	alert(numOfBullets);
-	for(i=1;i<numOfBullets;i++) {
-		$('.slider-dots').append('<li class=\'dot\'>&bull;</li>');
-	}
-	for(i=1;i<numOfBullets;i++) {
-		$('.project-slides').clone().append($('.slide-template').html());
-		$('.slide-template').addClass('slide');
-		$('.slide-template').removeClass('slide-template');
-	}
 }
 
 $(document).ready(main);
