@@ -136,7 +136,7 @@ body {
 
 .website-text-desc p {
 	text-align: left;
-	font-size: 12px;
+	font-size: 13px;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -154,12 +154,14 @@ body {
 .nav-tabs > li.active > a:focus {
 	color: #000000;
 	background-color: #E9E9E9;
+	font-size: 15px;
 }
 
 .nav-tabs > li > a,
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
 	color: #000000;
+	font-size: 15px;
 }
 
 /* Project Slider Styling */
@@ -188,7 +190,7 @@ body {
 }
 
 .slider p {
-	font-size: 12px;
+	font-size: 13px;
 	/*margin-left: -150px;*/
 }
 
