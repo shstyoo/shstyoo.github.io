@@ -61,7 +61,7 @@ var main = function() {
 
 		if(prevDot.length == 0){
 			prevDot = $('.dot').last();
-			prevSlide =$('.slide').last();
+			prevSlide = $('.slide').last();
 		}
 
 		currentSlide.fadeOut(600).removeClass('active-slide');

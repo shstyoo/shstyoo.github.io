@@ -209,12 +209,22 @@ body {
 	height: auto;
 }
 
+.slider {
+	position: relative;
+}
+
 .slide {
+	position: absolute;
 	display: none;
+	left: -15px;
+	top: 20px;
 }
 
 .active-slide {
-	display: block;
+	left: -15px;
+	top: 20px;
+	position: absolute;
+	display: initial;
 }
 
 /* If Project name is longer add (...) to signify name is too long */
@@ -257,7 +267,7 @@ body {
 .slider-nav {
 	text-align: center;
 	outline-style: none;
-	margin-top: -80px;
+	margin-top: -75px;
 }
 
 
