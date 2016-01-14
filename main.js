@@ -51,7 +51,6 @@ var main = function() {
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
 	});
-
 	$('#arrow-prev').click(function() {
 		var currentSlide = $('.active-slide');
 		var prevSlide = currentSlide.prev();
@@ -71,6 +70,7 @@ var main = function() {
 		prevDot.addClass('active-dot');
 	});
 
+	// Tab pane functinality (allows users to select and view certain panes)
 	$('#activity').click(function() {
 		if($('#activity').hasClass('active')) {
 			// Do nothing
@@ -82,7 +82,6 @@ var main = function() {
 			$('#about').removeClass('active');
 		}
 	});
-
 	$('#projects').click(function() {
 		if($('#projects').hasClass('active')) {
 			// Do nothing
@@ -94,7 +93,6 @@ var main = function() {
 			$('#about').removeClass('active');
 		}
 	});
-
 	$('#contact').click(function() {
 		if($('#contact').hasClass('active')) {
 			// Do nothing
@@ -106,7 +104,6 @@ var main = function() {
 			$('#about').removeClass('active');
 		}
 	});
-
 	$('#about').click(function() {
 		if($('#about').hasClass('active')) {
 			// Do nothing
