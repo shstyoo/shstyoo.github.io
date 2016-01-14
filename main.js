@@ -70,6 +70,54 @@ var main = function() {
 		currentDot.removeClass('active-dot');
 		prevDot.addClass('active-dot');
 	});
+
+	$('#activity').click(function() {
+		if($('#activity').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#activity').addClass('active');
+			$('#projects').removeClass('active');
+			$('#contact').removeClass('active');
+			$('#about').removeClass('active');
+		}
+	});
+
+	$('#projects').click(function() {
+		if($('#projects').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#projects').addClass('active');
+			$('#activity').removeClass('active');
+			$('#contact').removeClass('active');
+			$('#about').removeClass('active');
+		}
+	});
+
+	$('#contact').click(function() {
+		if($('#contact').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#contact').addClass('active');
+			$('#activity').removeClass('active');
+			$('#projects').removeClass('active');
+			$('#about').removeClass('active');
+		}
+	});
+
+	$('#about').click(function() {
+		if($('#about').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#about').addClass('active');
+			$('#activity').removeClass('active');
+			$('#projects').removeClass('active');
+			$('#contact').removeClass('active');
+		}
+	});
 }
 
 $(document).ready(main);
