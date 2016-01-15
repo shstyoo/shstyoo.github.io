@@ -209,6 +209,11 @@ body {
 	height: auto;
 }
 
+.projects-tab, .contact-tab, .about-tab {
+	position: relative;
+	display: none;
+}
+
 .slider {
 	position: relative;
 }
@@ -267,7 +272,7 @@ body {
 .slider-nav {
 	text-align: center;
 	outline-style: none;
-	margin-top: -75px;
+	margin-top: 400px;
 }
 
 

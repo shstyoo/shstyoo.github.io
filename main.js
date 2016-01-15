@@ -80,6 +80,10 @@ var main = function() {
 			$('#projects').removeClass('active');
 			$('#contact').removeClass('active');
 			$('#about').removeClass('active');
+			$(".slider").css("display", "initial");
+			$(".projects-tab").css("display", "none");
+			$(".contact-tab").css("display", "none");
+			$(".about-tab").css("display", "none");
 		}
 	});
 	$('#projects').click(function() {
@@ -91,6 +95,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#contact').removeClass('active');
 			$('#about').removeClass('active');
+			$(".projects-tab").css("display", "initial");
+			$(".slider").css("display", "none");
+			$(".contact-tab").css("display", "none");
+			$(".about-tab").css("display", "none");
 		}
 	});
 	$('#contact').click(function() {
@@ -102,6 +110,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#projects').removeClass('active');
 			$('#about').removeClass('active');
+			$(".contact-tab").css("display", "initial");
+			$(".slider").css("display", "none");
+			$(".projects-tab").css("display", "none");
+			$(".about-tab").css("display", "none");
 		}
 	});
 	$('#about').click(function() {
@@ -113,6 +125,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#projects').removeClass('active');
 			$('#contact').removeClass('active');
+			$(".about-tab").css("display", "initial");
+			$(".slider").css("display", "none");
+			$(".projects-tab").css("display", "none");
+			$(".contact-tab").css("display", "none");
 		}
 	});
 }
