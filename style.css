@@ -303,6 +303,12 @@ body {
 	color: #363636;
 }
 
+/* Projects styling */
+.project-header h3{
+	font-size: 20px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
 .noSelect {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
