@@ -242,17 +242,25 @@ body {
 }
 
 #noWrapProjImg {
-	margin-top: -35px;
+	margin-top: -37px;
 	width: 415px;
+	margin-left: 1px;
+}
+
+#noWrapProjImg img {
+	width: 622px;
+	height: 415px;
 }
 
 .col-xs-8 noWrapProjImg {
-	width: 415px;
+	width: 413px;
 }
 
 .slider img{
-	margin-left: -15px;
-	margin-top: 15px;
+	margin-left: -16px;
+	width: 621px;
+	margin-top: 17px;
+	height: 416px;
 }
 
 .slider-nav-left, .slider-nav-right {
@@ -294,6 +302,12 @@ body {
 .slider-dots li.active-dot {
 	color: #363636;
 }
+
+/* Contact Tab stuff */
+.contact-tab {
+	font-family: 'Ubuntu', sans-serif;
+}
+
 
 .noSelect {
 	-webkit-touch-callout: none;
