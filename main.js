@@ -131,6 +131,46 @@ var main = function() {
 			$(".contact-tab").hide();
 		}
 	});
+	$('#home-btn').click(function() {
+		$('#activity').addClass('active');
+		$('#projects').removeClass('active');
+		$('#contact').removeClass('active');
+		$('#about').removeClass('active');
+		$(".projects-tab").hide();
+		$(".contact-tab").hide();
+		$(".about-tab").hide();
+		$(".slider").show();
+	});
+	$('#project-btn').click(function() {
+		$('#projects').addClass('active');
+		$('#activity').removeClass('active');
+		$('#contact').removeClass('active');
+		$('#about').removeClass('active');
+		$(".projects-tab").show();
+		$(".slider").hide();
+		$(".contact-tab").hide();
+		$(".about-tab").hide();
+	});
+	$('#contact-btn').click(function() {
+		$('#contact').addClass('active');
+		$('#activity').removeClass('active');
+		$('#projects').removeClass('active');
+		$('#about').removeClass('active');
+		$(".contact-tab").show();
+		$(".slider").hide();
+		$(".projects-tab").hide();
+		$(".about-tab").hide();
+	});
+	$('#about-btn').click(function() {
+		$('#about').addClass('active');
+		$('#activity').removeClass('active');
+		$('#projects').removeClass('active');
+		$('#contact').removeClass('active');
+		$(".about-tab").show();
+		$(".slider").hide();
+		$(".projects-tab").hide();
+		$(".contact-tab").hide();
+	});
 }
 
 $(document).ready(main);
