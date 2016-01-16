@@ -45,8 +45,8 @@ var main = function() {
 			nextSlide = $('.slide').first();
 		}
 
-		currentSlide.fadeOut(200).removeClass('active-slide');
-		nextSlide.fadeIn(200).addClass('active-slide');
+		currentSlide.fadeOut(600).removeClass('active-slide');
+		nextSlide.fadeIn(600).addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
@@ -63,8 +63,8 @@ var main = function() {
 			prevSlide = $('.slide').last();
 		}
 
-		currentSlide.fadeOut(200).removeClass('active-slide');
-		prevSlide.fadeIn(200).addClass('active-slide');
+		currentSlide.fadeOut(600).removeClass('active-slide');
+		prevSlide.fadeIn(600).addClass('active-slide');
 
 		currentDot.removeClass('active-dot');
 		prevDot.addClass('active-dot');
@@ -80,10 +80,10 @@ var main = function() {
 			$('#projects').removeClass('active');
 			$('#contact').removeClass('active');
 			$('#about').removeClass('active');
-			$(".slider").css("display", "initial");
-			$(".projects-tab").css("display", "none");
-			$(".contact-tab").css("display", "none");
-			$(".about-tab").css("display", "none");
+			$(".projects-tab").hide();
+			$(".contact-tab").hide();
+			$(".about-tab").hide();
+			$(".slider").show();
 		}
 	});
 	$('#projects').click(function() {
@@ -95,10 +95,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#contact').removeClass('active');
 			$('#about').removeClass('active');
-			$(".projects-tab").css("display", "initial");
-			$(".slider").css("display", "none");
-			$(".contact-tab").css("display", "none");
-			$(".about-tab").css("display", "none");
+			$(".projects-tab").show();
+			$(".slider").hide();
+			$(".contact-tab").hide();
+			$(".about-tab").hide();
 		}
 	});
 	$('#contact').click(function() {
@@ -110,10 +110,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#projects').removeClass('active');
 			$('#about').removeClass('active');
-			$(".contact-tab").css("display", "initial");
-			$(".slider").css("display", "none");
-			$(".projects-tab").css("display", "none");
-			$(".about-tab").css("display", "none");
+			$(".contact-tab").show();
+			$(".slider").hide();
+			$(".projects-tab").hide();
+			$(".about-tab").hide();
 		}
 	});
 	$('#about').click(function() {
@@ -125,10 +125,10 @@ var main = function() {
 			$('#activity').removeClass('active');
 			$('#projects').removeClass('active');
 			$('#contact').removeClass('active');
-			$(".about-tab").css("display", "initial");
-			$(".slider").css("display", "none");
-			$(".projects-tab").css("display", "none");
-			$(".contact-tab").css("display", "none");
+			$(".about-tab").show();
+			$(".slider").hide();
+			$(".projects-tab").hide();
+			$(".contact-tab").hide();
 		}
 	});
 }

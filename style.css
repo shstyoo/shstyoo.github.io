@@ -101,14 +101,6 @@ body {
 	text-transform: uppercase;
 }
 
-/* Background Styling (Jumbotron) */
-
-.slider {
-	font-family: 'Droid Sans', sans-serif;
-	min-height: 500px;
-	margin-left: 0px;
-}
-
 /* Header Styling */
 
 .header-Main {
@@ -212,10 +204,12 @@ body {
 .projects-tab, .contact-tab, .about-tab {
 	position: relative;
 	display: none;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .slider {
 	position: relative;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .slide {
@@ -245,15 +239,6 @@ body {
 	margin-top: -37px;
 	width: 415px;
 	margin-left: 1px;
-}
-
-#noWrapProjImg img {
-	width: 622px;
-	height: 415px;
-}
-
-.col-xs-8 noWrapProjImg {
-	width: 413px;
 }
 
 .slider img{
@@ -302,12 +287,6 @@ body {
 .slider-dots li.active-dot {
 	color: #363636;
 }
-
-/* Contact Tab stuff */
-.contact-tab {
-	font-family: 'Ubuntu', sans-serif;
-}
-
 
 .noSelect {
 	-webkit-touch-callout: none;
