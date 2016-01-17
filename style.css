@@ -309,6 +309,10 @@ body {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+.project-list {
+	list-style-type: none;
+}
+
 .noSelect {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

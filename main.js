@@ -70,7 +70,7 @@ var main = function() {
 		prevDot.addClass('active-dot');
 	});
 
-	// Tab pane functinality (allows users to select and view certain panes)
+	// Tab pane functionality (allows users to select and view certain panes)
 	$('#activity').click(function() {
 		if($('#activity').hasClass('active')) {
 			// Do nothing
@@ -170,6 +170,30 @@ var main = function() {
 		$(".slider").hide();
 		$(".projects-tab").hide();
 		$(".contact-tab").hide();
+	});
+
+	// Projects tab functionality
+	$('#siteindexbutton').click(function() {
+		if($('#siteindexbutton').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#siteindexbutton').addClass('active')
+			$('#siteindexbutton_li').addClass('active')
+			$('#dota2button').removeClass('active')
+			$('#dota2button_li').removeClass('active')
+		}
+	});
+	$('#dota2button').click(function() {
+		if($('#dota2button').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#dota2button').addClass('active')
+			$('#dota2button_li').addClass('active')
+			$('#siteindexbutton').removeClass('active')
+			$('#siteindexbutton_li').removeClass('active')
+		}
 	});
 }
 
