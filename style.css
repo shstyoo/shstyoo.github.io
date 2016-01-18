@@ -305,12 +305,24 @@ body {
 
 /* Projects styling */
 .project-header h3{
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'Droid Sans', sans-serif;
 }
 
 .project-list {
 	list-style-type: none;
+}
+
+.siteindex-information, .dota2-information {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.dota2-information {
+	display: none;
+}
+
+.siteindex-information h3, .dota2-information h3 {
+	font-size: 15px;
 }
 
 .noSelect {

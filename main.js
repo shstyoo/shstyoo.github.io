@@ -182,6 +182,8 @@ var main = function() {
 			$('#siteindexbutton_li').addClass('active')
 			$('#dota2button').removeClass('active')
 			$('#dota2button_li').removeClass('active')
+			$('.siteindex-information').show();
+			$('.dota2-information').hide();
 		}
 	});
 	$('#dota2button').click(function() {
@@ -193,6 +195,8 @@ var main = function() {
 			$('#dota2button_li').addClass('active')
 			$('#siteindexbutton').removeClass('active')
 			$('#siteindexbutton_li').removeClass('active')
+			$('.dota2-information').show();
+			$('.siteindex-information').hide();
 		}
 	});
 }
