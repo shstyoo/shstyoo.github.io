@@ -311,6 +311,7 @@ body {
 
 .project-list {
 	list-style-type: none;
+
 }
 
 .siteindex-information, .dota2-information {
@@ -323,6 +324,12 @@ body {
 
 .siteindex-information h3, .dota2-information h3 {
 	font-size: 15px;
+	margin-top: -25px;
+	margin-left: -30px;
+	padding-left: 30px;
+	border-left: 2px solid #D9D9D9;
+	height: 415px;
+
 }
 
 .noSelect {
