@@ -178,12 +178,15 @@ var main = function() {
 			// Do nothing
 		}
 		else {
-			$('#siteindexbutton').addClass('active')
-			$('#siteindexbutton_li').addClass('active')
-			$('#dota2button').removeClass('active')
-			$('#dota2button_li').removeClass('active')
+			$('#siteindexbutton').addClass('active');
+			$('#siteindexbutton_li').addClass('active');
+			$('#dota2button').removeClass('active');
+			$('#dota2button_li').removeClass('active');
+			$('#random-projects-button').removeClass('active');
+			$('#random-project_li').removeClass('active');
 			$('.siteindex-information').show();
 			$('.dota2-information').hide();
+			$('.random-proj-information').hide();
 		}
 	});
 	$('#dota2button').click(function() {
@@ -191,12 +194,31 @@ var main = function() {
 			// Do nothing
 		}
 		else {
-			$('#dota2button').addClass('active')
-			$('#dota2button_li').addClass('active')
-			$('#siteindexbutton').removeClass('active')
-			$('#siteindexbutton_li').removeClass('active')
+			$('#dota2button').addClass('active');
+			$('#dota2button_li').addClass('active');
+			$('#siteindexbutton').removeClass('active');
+			$('#siteindexbutton_li').removeClass('active');
+			$('#random-projects-button').removeClass('active');
+			$('#random-project_li').removeClass('active');
 			$('.dota2-information').show();
 			$('.siteindex-information').hide();
+			$('.random-proj-information').hide();
+		}
+	});
+	$('#random-projects-button').click(function() {
+		if($('#random-projects-button').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#random-projects-button').addClass('active');
+			$('#random-project_li').addClass('active');
+			$('#dota2button').removeClass('active');
+			$('#dota2button_li').removeClass('active');
+			$('#siteindexbutton').removeClass('active');
+			$('#siteindexbutton_li').removeClass('active');
+			$('.dota2-information').hide();
+			$('.siteindex-information').hide();
+			$('.random-proj-information').show();
 		}
 	});
 }

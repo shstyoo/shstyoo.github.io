@@ -314,15 +314,12 @@ body {
 
 }
 
-.siteindex-information, .dota2-information {
-	font-family: 'Droid Sans', sans-serif;
-}
-
-.dota2-information {
+.dota2-information, .random-proj-information {
 	display: none;
 }
 
-.siteindex-information h3, .dota2-information h3 {
+.siteindex-information h3, .dota2-information h3, .random-proj-information h3 {
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 15px;
 	margin-top: -25px;
 	margin-left: -30px;
