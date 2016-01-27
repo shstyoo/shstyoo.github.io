@@ -184,9 +184,12 @@ var main = function() {
 			$('#dota2button_li').removeClass('active');
 			$('#random-projects-button').removeClass('active');
 			$('#random-project_li').removeClass('active');
+			$('#alzheimer-model-button').removeClass('active');
+			$('#alzheimer-model_li').removeClass('active');
 			$('.siteindex-information').show();
 			$('.dota2-information').hide();
 			$('.random-proj-information').hide();
+			$('.alzheimer-model-info').hide();
 		}
 	});
 	$('#dota2button').click(function() {
@@ -200,9 +203,12 @@ var main = function() {
 			$('#siteindexbutton_li').removeClass('active');
 			$('#random-projects-button').removeClass('active');
 			$('#random-project_li').removeClass('active');
+			$('#alzheimer-model-button').removeClass('active');
+			$('#alzheimer-model_li').removeClass('active');
 			$('.dota2-information').show();
 			$('.siteindex-information').hide();
 			$('.random-proj-information').hide();
+			$('.alzheimer-model-info').hide();
 		}
 	});
 	$('#random-projects-button').click(function() {
@@ -216,9 +222,31 @@ var main = function() {
 			$('#dota2button_li').removeClass('active');
 			$('#siteindexbutton').removeClass('active');
 			$('#siteindexbutton_li').removeClass('active');
+			$('#alzheimer-model-button').removeClass('active');
+			$('#alzheimer-model_li').removeClass('active');
 			$('.dota2-information').hide();
 			$('.siteindex-information').hide();
+			$('.alzheimer-model-info').hide();
 			$('.random-proj-information').show();
+		}
+	});
+	$('#alzheimer-model-button').click(function() {
+		if($('#alzheimer-model-button').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#alzheimer-model-button').addClass('active');
+			$('#alzheimer-model_li').addClass('active');
+			$('#random-projects-button').removeClass('active');
+			$('#random-project_li').removeClass('active');
+			$('#dota2button').removeClass('active');
+			$('#dota2button_li').removeClass('active');
+			$('#siteindexbutton').removeClass('active');
+			$('#siteindexbutton_li').removeClass('active');
+			$('.dota2-information').hide();
+			$('.siteindex-information').hide();
+			$('.random-proj-information').hide();
+			$('.alzheimer-model-info').show();
 		}
 	});
 }
