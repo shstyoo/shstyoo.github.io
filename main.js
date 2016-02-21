@@ -190,6 +190,10 @@ var main = function() {
 			$('.dota2-information').hide();
 			$('.random-proj-information').hide();
 			$('.alzheimer-model-info').hide();
+
+			$('#discord-bot-button').removeClass('active');
+			$('#discord-bot_li').removeClass('active');
+			$('.discord-bot-info').hide();
 		}
 	});
 	$('#dota2button').click(function() {
@@ -209,6 +213,10 @@ var main = function() {
 			$('.siteindex-information').hide();
 			$('.random-proj-information').hide();
 			$('.alzheimer-model-info').hide();
+
+			$('#discord-bot-button').removeClass('active');
+			$('#discord-bot_li').removeClass('active');
+			$('.discord-bot-info').hide();
 		}
 	});
 	$('#random-projects-button').click(function() {
@@ -228,6 +236,10 @@ var main = function() {
 			$('.siteindex-information').hide();
 			$('.alzheimer-model-info').hide();
 			$('.random-proj-information').show();
+
+			$('#discord-bot-button').removeClass('active');
+			$('#discord-bot_li').removeClass('active');
+			$('.discord-bot-info').hide();
 		}
 	});
 	$('#alzheimer-model-button').click(function() {
@@ -247,6 +259,37 @@ var main = function() {
 			$('.siteindex-information').hide();
 			$('.random-proj-information').hide();
 			$('.alzheimer-model-info').show();
+
+			$('#discord-bot-button').removeClass('active');
+			$('#discord-bot_li').removeClass('active');
+			$('.discord-bot-info').hide();
+		}
+	});
+	$('#discord-bot-button').click(function() {
+		if($('#discord-bot-button').hasClass('active')) {
+			// Do nothing
+		}
+		else {
+			$('#alzheimer-model-button').removeClass('active');
+			$('#alzheimer-model_li').removeClass('active');
+			$('.alzheimer-model-info').hide();
+
+			$('#random-projects-button').removeClass('active');
+			$('#random-project_li').removeClass('active');
+			$('.random-proj-information').hide();
+
+			$('#dota2button').removeClass('active');
+			$('#dota2button_li').removeClass('active');
+			$('.dota2-information').hide();
+
+			$('#siteindexbutton').removeClass('active');
+			$('#siteindexbutton_li').removeClass('active');
+			$('.siteindex-information').hide();
+
+
+			$('#discord-bot-button').addClass('active');
+			$('#discord-bot_li').addClass('active');
+			$('.discord-bot-info').show();
 		}
 	});
 }

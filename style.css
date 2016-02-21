@@ -314,11 +314,12 @@ body {
 
 }
 
-.dota2-information, .random-proj-information, .alzheimer-model-info {
+.dota2-information, .random-proj-information, .alzheimer-model-info, .discord-bot-info {
 	display: none;
 }
 
-.siteindex-information h3, .dota2-information h3, .random-proj-information h3, .alzheimer-model-info h3 {
+.siteindex-information h3, .dota2-information h3, .random-proj-information h3,
+.alzheimer-model-info h3, .discord-bot-info h3 {
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 15px;
 	margin-top: -25px;
