@@ -1,0 +1,265 @@
+<!-- STATIC VERSION OF ORIGINAL WEBSITE (NO AJAX REQUESTS)
+
+Issues with git? Issues with git fixed. Stuff
+Birthday? Farm. Placeholder!
+
+LAST UPDATED 1/12/2016 -->
+
+<!doctype html>
+<html>
+	<head>
+
+	<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+
+	<!-- Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+		<!-- TESTING ONLY
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+		-->
+		<link rel="stylesheet" href="style.css">
+
+	<!-- jQuery and js apps (Maybe move to end for faster page load times??) -->
+	<!-- Only to be used on deploy
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	-->
+		<script src="jQuery/jquery-2.1.4.min.js"></script>
+		<script src="main.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container">
+		<!-- Menu icon -->
+			<div class="menuIconOpen">
+				<i class ="fa fa-bars slideMenuToggle"></i>
+			</div>
+			<div class="menuIconClose">
+				<i class ="fa fa-close slideMenuClose"></i>
+			</div>
+
+		<!-- Menu Header (top navigation) -->
+			<div class="menu">
+				<div class="slideOutMenu">
+					<ul class="menuList">
+						<li id="home-btn"><a href="#home">Home</a></li>
+						<li id="project-btn"><a href="#projects">Projects</a></li>
+						<li id="contact-btn"><a href="#contact">Contact Me</a></li>
+						<li id="about-btn"><a href="#about">About</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- Header text goes here -->
+			<div class="header-Main">
+				<div class="row">
+					<span class="text-nowrap"><div class="col-xs-12"><h1>Hello World</h1></div></span>
+				</div>
+			</div>
+			<div class="header-sub-1">
+				<div class="row">
+					<span class="text-nowrap"><div class="col-xs-12"><h2>Welcome to Steve's Homepage</h2></div></span>
+				</div>
+			</div>
+			<div class="header-sub-2">
+				<ul class="nav nav-tabs">
+					<li id="activity" role="presentation" class="active"><a data-toggle="tab" href="#home">Recent Activity</a></li>
+					<li id="projects" role="presentation"><a data-toggle="tab" href="#projects">Projects</a></li>
+					<li id="contact" role="presentation"><a data-toggle="tab" href="#contact">Contact Me</a></li>
+					<li id="about" role="presentation"><a data-toggle="tab" href="#about">About</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 website-text-desc"><p>My recent projects as well as my most
+					recent commits can be found here! Use the arrows at the bottom to navigate
+					through my Github Repositories, or for more detailed information, check out the
+					<a href="shstyoo.github.io/projects-page">Projects</a> tab above!</p>
+				</div>
+			</div>
+
+		<!-- Slider (contains active project slide) -->
+			<div class="slider">
+				<div class="row">
+					<ul class="project-slides">
+						<div class="slide active-slide">
+							<li class="project-slide">
+								<div class="col-xs-4" id="noWrapProjInfo">
+									<span class="text-nowrap"><h3 id="projName">shstyoo.github.io</h3></span>
+									<p id="projDesc">Github index site</p>
+									<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+									<p id="date">Made on: 00/00/0000</p>
+									<p id="commitDesc">Recent commit message goes here!!!</p>
+								</div>
+								<div class="col-xs-8" id="noWrapProjImg">
+									<img src="Textures/Menu-Background/placeholder.png" width="620px" height="413px" alt="shstyoo.github.io_picture">
+								</div>
+							</li>
+						</div>
+						<div class="slide">
+							<li class="project-slide">
+								<div class="col-xs-4" id="noWrapProjInfo">
+									<span class="text-nowrap"><h3 id="projName">dota-machine-learning</h3></span>
+									<p id="projDesc">Machine learning algorithm applied to caclulating probability of victory in a Dota 2 match</p>
+									<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+									<p id="date">Made on: 00/00/0000</p>
+									<p id="commitDesc">Recent commit message goes here!!!</p>
+								</div>
+								<div class="col-xs-8" id="noWrapProjImg">
+									<img src="Textures/Menu-Background/rubickdotaimage.png" width="620px" height="413px" alt="dota-machine-learning_picture">
+									<!--<img src="Textures/Menu-Background/tinkerdotaimage.png" width="620px" height="413px" alt="dota-machine-learning_picture">-->
+								</div>
+							</li>
+						</div>
+						<div class="slide">
+							<li class="project-slide">
+								<div class="col-xs-4" id="noWrapProjInfo">
+									<span class="text-nowrap"><h3 id="projName">random-projects</h3></span>
+									<p id="projDesc">Random assortment of challenges from various sites (hackthissite, hackerrank, etc...) and any other projects that don't fit in their own repo.</p>
+									<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+									<p id="date">Made on: 00/00/0000</p>
+									<p id="commitDesc">Recent commit message goes here!!!</p>
+								</div>
+								<div class="col-xs-8" id="noWrapProjImg">
+									<img src="Textures/Menu-Background/placeholder.png" width="620px" height="413px" alt="dota-machine-learning_picture">
+									<!--<img src="Textures/Menu-Background/tinkerdotaimage.png" width="620px" height="413px" alt="dota-machine-learning_picture">-->
+								</div>
+							</li>
+						</div>
+						<div class="slide">
+							<li class="project-slide">
+								<div class="col-xs-4" id="noWrapProjInfo">
+									<span class="text-nowrap"><h3 id="projName">alzheimer-prediction-model</h3></span>
+									<p id="projDesc">A machine learning model designed to help predict the onset of Alzheimer's Disease.</p>
+									<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+									<p id="date">Made on: 00/00/0000</p>
+									<p id="commitDesc">Recent commit message goes here!!!</p>
+								</div>
+								<div class="col-xs-8" id="noWrapProjImg">
+									<img src="Textures/Menu-Background/placeholder.png" width="620px" height="413px" alt="dota-machine-learning_picture">
+									<!--<img src="Textures/Menu-Background/tinkerdotaimage.png" width="620px" height="413px" alt="dota-machine-learning_picture">-->
+								</div>
+							</li>
+						</div>
+						<div class="slide">
+							<li class="project-slide">
+								<div class="col-xs-4" id="noWrapProjInfo">
+									<span class="text-nowrap"><h3 id="projName">discord-bots</h3></span>
+									<p id="projDesc">Collection of bots written for Discord.</p>
+									<span class="text-nowrap"><h3 id="commit">Most Recent Commit:</h3></span>
+									<p id="date">Made on: 00/00/0000</p>
+									<p id="commitDesc">Recent commit message goes here!!!</p>
+								</div>
+								<div class="col-xs-8" id="noWrapProjImg">
+									<img src="Textures/Slide-Background/discord-grey.png" width="620px" height="413px" alt="dota-machine-learning_picture">
+									<!--<img src="Textures/Menu-Background/tinkerdotaimage.png" width="620px" height="413px" alt="dota-machine-learning_picture">-->
+								</div>
+							</li>
+						</div>
+					</ul>
+				</div>
+
+				<div class="slider-nav noSelect">
+					<div class="slider-nav-left">
+						<i class="glyphicon glyphicon-menu-left" id="arrow-prev"></i>
+					</div>
+					<ul class="slider-dots">
+						<li class="dot active-dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+					</ul>
+					<div class="slider-nav-right">
+						<i class="glyphicon glyphicon-menu-right" id="arrow-next"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="projects-tab">
+				<div class="row">
+
+					<div class="col-xs-12 project-header">
+						<h3>Projects:</h3>
+					</div>
+
+					<div class="col-xs-4 projects-nav">
+						<ul class="nav nav-pills nav-stacked">
+							<li id="siteindexbutton_li" class="active">
+								<a id="siteindexbutton" class="nav-link active" href="#">Github Index Site</a>
+							</li>
+							<li id="dota2button_li">
+								<a id="dota2button" class="nav-link" href="#">Dota 2 Victory Predictor</a>
+							</li>
+							<li id="random-project_li">
+								<a id="random-projects-button" class="nav-link" href="#">Random Projects Repository</a>
+							</li>
+							<li id="alzheimer-model_li">
+								<a id="alzheimer-model-button" class="nav-link" href="#">Alzheimer's Prediction Model</a>
+							</li>
+							<li id="discord-bot_li">
+								<a id="discord-bot-button" class="nav-link" href="#">Discord Bots</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-8 project-text">
+						<ul class="project-list">
+							<li class="siteindex-information">
+								<h3>My Github Site serves as the index for all of my projects as well as a place you can get in touch with me.
+									All of my projects can be found on the site in great detail, and will contain links to their respective
+									repositories on Github.
+									<br>
+									The project was last updated: 1/18/2016.
+								</h3>
+							</li>
+							<li class="dota2-information">
+								<h3>This machine learning algorithm aims to predict the probability of a victory given certain parameters.
+									This program will take into account the 5v5 matchup based on the heros that have been selected, and
+									will also factor historical player performance on a hero in addition to hero lane matchups to
+									get the most accurate prediction of a victorious team.
+								</h3>
+							</li>
+							<li class="random-proj-information">
+								<h3>Whatever projects don't fit into any one repository, or are just simple one-and-done snippets of code that
+									I've worked on in the past will be compiled into this repository. There are projects from hackthissite,
+									and Hackerrank that have found their way into this repo. It also contains various coding projects I've done
+									for school and for work that may only have functionality in a specific scope.
+								</h3>
+							</li>
+							<li class="alzheimer-model-info">
+								<h3>Project information to come.
+								</h3>
+							</li>
+							<li class="discord-bot-info">
+								<h3>Collection of bots that parse text and run scripts using the Discord API. There are multiple bots that have
+									been written, or are currently in the process of being written. Currently there is one bot that has limited
+									functionality. It is able to fetch current weather data for a city, choose between a random set of strings,
+									and measure the level of salt currently in the Discord channel.
+								</h3>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="contact-tab">
+				<div class="row contact-me">
+					<h3>Contact Me!</h3>
+					<p>Use the form below to get in touch with me, or to leave me a message</p>
+				</div>
+			</div>
+
+			<div class="about-tab">
+				<p>About stuff goes here</p>
+			</div>
+
+		</div>
+	</body>
+</html>
