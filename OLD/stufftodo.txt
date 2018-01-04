@@ -1,6 +1,0 @@
--- Need to create slide timer for recent activity page (automatically transition between the slides
-if the user has not clicked on them in a while)
-
--- Populate the projects page (make the text a little bit better to read)
-
--- Finish Contact and About pages
